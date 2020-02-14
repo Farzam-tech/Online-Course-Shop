@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , li{
+    list-style: none;
+}
+.total{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.orders > li{
+    padding: 10px;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 18px;
+}
+.orders > li > span{
+    cursor: pointer;
+    border : 2px solid red;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+.shop-form{
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid #a1a1a1;
+    padding: 10px;
+}
+.shop-form > h2{
+    padding: 10px;
+}
+.shop-form > input ,
+.shop-form > button {
+    width: 100%;
+    height: 35px;
+}
+.shop-form > button {
+    cursor: pointer;
+}
+.shop-form > button:hover{
+    color: red;
+}
+
+
+
+.tutorials-app{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid red;
+}
+.tutorials , .order , .inventory {
+    width: 33.33333%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.add-tutorial-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+.add-tutorial-form > textarea{
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+}
+.add-tutorial-form > input ,
+.add-tutorial-form > select {
+    width: 33.333333%;
+    height: 35px;
+    padding-left: 10px;
+}
+.remove-tutorial{
+    display: block;
+  width: 200px;
+  height: 40px;  
+  background-color: black;
+  color: white;
+
+}
+.img-change {
+    width: 200px !important;
+    height: 40px !important;
+    
+}
+  
+
+.add-tutorial{
+    flex-grow: 1;
+}
+.single-tutorial{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    background-color: cornflowerblue;
+}
+.single-tutorial > img{
+    width: 120px;
+    max-height: 80px;
+    min-width: 120px;
+}
+.single-tutorial > .details{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+}
+.single-tutorial > .details > h2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.single-tutorial > .details > h2 > .price{
+    font-size: 16px;
+}
+.single-tutorial > .details > p{
+    width: 100%;
+}
+
+.add-to-order{
+    margin-top: 10px;
+    height: 30px;
+    background: #333;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    padding: 5px 15px;
+}
+.add-to-edit{
+    
+    margin-top: 10px;
+    margin-left: 95px;
+    height: 30px;
+    background: #333;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    padding: 5px 15px;
+}
+
+.add-to-order:disabled{
+    color: red;
+       transform: translate(20px , -10px) rotate(-15deg) ;
+    font-size: 20px;
+    border: 1px solid white;
+    background: black;
+    cursor: not-allowed;
+}
+.add-to-edit:disabled{
+    margin-left: 79px;
+   
+}
+.header{
+    background-color: black;
+    text-align: center;
+    color: blanchedalmond;
+    margin: 10px 0 ;
+    height: 40px;
+}
+.load-sample{
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
